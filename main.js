@@ -33,3 +33,8 @@ function freezeObj() {
     return MATH_CONSTANTS.PI;
   }
   const PI = freezeObj();
+
+  const sum = (x, y, z) => {
+    const args = [x, y, z];
+    return args.reduce((a, b) => a + b, 0);
+  }
